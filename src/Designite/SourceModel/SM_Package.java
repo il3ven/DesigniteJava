@@ -89,8 +89,8 @@ public class SM_Package extends SM_SourceItem {
 			 * imports.addAll(importList);
 			 */
 
-			TypeVisitor visitor = new TypeVisitor(unit, this, inputArgs);
-			unit.accept(visitor);
+			TypeVisitor visitor = new TypeVisitor(unit, this, inputArgs); //Probably : TypeVisitor is for classes and interfaces
+			unit.accept(visitor); // telling this compilation unit to accept this specific vistor. Here TypeVisitor.
 			List<SM_Type> list = visitor.getTypeList();
 			if (list.size() > 0) {
 				if (list.size() == 1) {

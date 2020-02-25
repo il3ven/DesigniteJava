@@ -11,7 +11,7 @@ import java.util.List;
 
 public class TypeVisitor extends ASTVisitor{
 	private List<SM_Type> types = new ArrayList<SM_Type>();
-	private List<TypeDeclaration> typeDeclarationList = new ArrayList<TypeDeclaration>();
+	private List<TypeDeclaration> typeDeclarationList = new ArrayList<TypeDeclaration>(); // Possibly : this stores list of classes or interfaces (aka typeDeclaration) found
 	private CompilationUnit compilationUnit;
 	private SM_Type newType;
 	private SM_Package pkgObj;
@@ -23,7 +23,11 @@ public class TypeVisitor extends ASTVisitor{
 		this.pkgObj = pkgObj;
 		this.inputArgs = inputArgs;
 	}
-	
+
+	// Possibly : These visit functions traverse/visit the Abstract Syntax Tree and find a specific type of node. 
+	// 			  Then do something we the node.
+	//			  Here, a new SM_Type object is created when a typeDeclaration is found.
+	//			  The typeDeclaration is also saved in a list.
 	@Override
 	public boolean visit(TypeDeclaration typeDeclaration){
 		typeDeclarationList.add(typeDeclaration);

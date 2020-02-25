@@ -248,7 +248,8 @@ public class SM_Type extends SM_SourceItem implements Vertex {
 		print(writer, "\t----");
 	}
 
-
+	//Probably : Here we are finding all the methods, fields and access visitors. The process is same.
+	//			 We have used a visit() function which we passed to accept(). This traverses the AST and finds the type of node we are looking for.
 	@Override
 	public void parse() {
 		MethodVisitor methodVisitor = new MethodVisitor(typeDeclaration, this);
