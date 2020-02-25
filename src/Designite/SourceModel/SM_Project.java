@@ -174,6 +174,10 @@ public class SM_Project extends SM_SourceItem {
 		return cu;
 	}
 
+/**
+ * Stores path of every .java file found in the String path. Adds it to sourceFileList (ArrayList).
+ * @param path Input Directory
+ */
 	private void getFileList(String path) {
 		File root = new File(path);
 		File[] list = root.listFiles();
@@ -192,6 +196,11 @@ public class SM_Project extends SM_SourceItem {
 		return;
 	}
 
+	/**
+	 * Reads and save the file as a String 
+	 * @param sourcePath Path to the file
+	 * @return Source Code converted to string
+	 */
 	private String readFileToString(String sourcePath) {
 		try {
 			return new String(Files.readAllBytes(Paths.get(sourcePath)));
