@@ -78,6 +78,10 @@ public class SM_Package extends SM_SourceItem {
 		print(writer, "----");
 	}
 	
+	/*Parse is like traversing the AST finding nodes. If the node corresponds to a method we 
+	* create a SM_Method object. If the node corresponds to a type (class or interface) we
+	* create a SM_Type object. TL:DR We are creating objects of type SM_* for our source code.
+	*/ 
 	@Override
 	public void parse() {
 
@@ -104,7 +108,7 @@ public class SM_Package extends SM_SourceItem {
 				}
 			}
 		}
-		parseTypes(this);
+		parseTypes(this); //Till here we have parsed packages for types. We will now parse types for methods, fields etc...
 	}
 
 	@Override

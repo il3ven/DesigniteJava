@@ -257,7 +257,7 @@ public class SM_Type extends SM_SourceItem implements Vertex {
 		List<SM_Method> mList = methodVisitor.getMethods();
 		if (mList.size() > 0)
 			methodList.addAll(mList);
-		parseMethods();
+		parseMethods(); //Once methods are found now parse those found methods.
 
 		FieldVisitor fieldVisitor = new FieldVisitor(this);
 		typeDeclaration.accept(fieldVisitor);
