@@ -15,6 +15,7 @@ import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 
 import Designite.InputArgs;
+import Designite.metrics.FieldMetrics;
 import Designite.metrics.MethodMetrics;
 import Designite.smells.implementationSmells.ImplementationSmellDetector;
 import Designite.smells.models.ImplementationCodeSmell;
@@ -356,6 +357,14 @@ public class SM_Type extends SM_SourceItem implements Vertex {
 			exportMethodMetricsToCSV(metrics, method.getName());
 		}
 	}
+
+	public void extractFieldMetrics() {
+		for(SM_Field field : fieldList) {
+			FieldMetrics metrics = new FieldMetrics(field);
+			metrics.extractMetrics();
+			exportFieldMetricsToCSV(metrics, field.getName());
+		}
+	}
 	
 	public MethodMetrics getMetricsFromMethod(SM_Method method) {
 		return metricsMapping.get(method);
@@ -366,6 +375,12 @@ public class SM_Type extends SM_SourceItem implements Vertex {
 				+ File.separator + Constants.METHOD_METRICS_PATH_SUFFIX;
 		CSVUtils.addToCSVFile(path, getMetricsAsARow(metrics, methodName));
 	}
+
+	public void exportFieldMetricsToCSV(FieldMetrics metrics, String fieldName) {
+		String path = inputArgs.getOutputFolder()
+				+ File.separator + Constants.FIELD_METRICS_PATH_SUFFIX;
+		CSVUtils.addToCSVFile(path, getMetricsAsARow(metrics, fieldName));
+	}
 	
 	private String getMetricsAsARow(MethodMetrics metrics, String methodName) {
 		return getParentPkg().getParentProject().getName()
@@ -375,6 +390,17 @@ public class SM_Type extends SM_SourceItem implements Vertex {
 				+ "," + metrics.getNumOfLines()
 				+ "," + metrics.getCyclomaticComplexity()
 				+ "," + metrics.getNumOfParameters()
+				+ "," + metrics.getNumberOfFieldsNeededByMethod()
+				+ "\n";
+	}
+
+	private String getMetricsAsARow(FieldMetrics metrics, String fieldName) {
+		return getParentPkg().getParentProject().getName()
+				+ "," + getParentPkg().getName()
+				+ "," + getName()
+				+ "," + fieldName
+				+ "," + metrics.getNmn()
+				+ "," + metrics.getNcf()
 				+ "\n";
 	}
 	

@@ -14,6 +14,7 @@ public class Constants {
 	
 	public static final String TYPE_METRICS_PATH_SUFFIX = "typeMetrics.csv";
 	public static final String METHOD_METRICS_PATH_SUFFIX = "methodMetrics.csv";
+	public static final String FIELD_METRICS_PATH_SUFFIX = "fieldMetrics.csv";
 	public static final String DESIGN_CODE_SMELLS_PATH_SUFFIX = "designCodeSmells.csv";
 	public static final String IMPLEMENTATION_CODE_SMELLS_PATH_SUFFIX = "implementationCodeSmells.csv";
 	
@@ -40,7 +41,16 @@ public class Constants {
 			+ ",LOC"
 			+ ",CC"
 			+ ",PC"
+			+ ",NFM"
 			+ "\n";
+
+	public static final String FIELD_METRICS_HEADER = "Project Name"
+	+ ",Package Name"
+	+ ",Type Name"
+	+ ",Field Name"
+	+ ",Number of methods needing a Field"
+	+ ",Number of computaions of a field"
+	+ "\n";
 	
 	public static final String DESIGN_CODE_SMELLS_HEADER = "Project Name"
 			+ ",Package Name"

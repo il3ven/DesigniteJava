@@ -4,6 +4,8 @@ import java.io.PrintWriter;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.eclipse.jdt.core.dom.FieldAccess;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
@@ -13,6 +15,7 @@ import org.eclipse.jdt.core.dom.SingleVariableDeclaration;
 import org.eclipse.jdt.core.dom.Type;
 
 import Designite.utils.models.Vertex;
+import Designite.visitors.AssignmentVistor;
 import Designite.visitors.DirectAceessFieldVisitor;
 import Designite.visitors.InstanceOfVisitor;
 import Designite.visitors.ThrowVisitor;
@@ -38,6 +41,8 @@ public class SM_Method extends SM_SourceItem implements Vertex {
 	private List<SM_Field> directFieldAccesses = new ArrayList<>();
 	private List<Type> typesInInstanceOf = new ArrayList<>();
 	private List<SM_Type> smTypesInInstanceOf = new ArrayList<>();
+	private Map<String, Integer> thisFieldsAssigned = new HashMap<>(); //Map of how many times a field is assigned a value
+	private Map<String, Integer> fieldsAssigned = new HashMap<>(); //Fields assigned without the this keyword
 
 	public SM_Method(MethodDeclaration methodDeclaration, SM_Type typeObj) {
 		name = methodDeclaration.getName().toString();
@@ -193,6 +198,26 @@ public class SM_Method extends SM_SourceItem implements Vertex {
 		ThrowVisitor throwVisithor = new ThrowVisitor();
 		methodDeclaration.accept(throwVisithor);
 		throwsException = throwVisithor.throwsException();
+
+		AssignmentVistor assignmentVistor = new AssignmentVistor();
+		methodDeclaration.accept(assignmentVistor);
+		Map<String, Integer> fields = assignmentVistor.getFieldsAssigned();
+		if(fields.size() > 0){
+			fieldsAssigned.putAll(fields);
+		}
+		fields = assignmentVistor.getThisFieldsAssigned();
+		if(fields.size() > 0){
+			thisFieldsAssigned.putAll(fields);
+		}
+		// System.out.println("Fields Found in Method " + methodDeclaration.getName().toString());
+		// for (String name: fieldAccess.keySet()){
+        //     String key = name.toString();
+        //     String value = fieldAccess.get(name).toString();  
+        //     System.out.println(key + " " + value);  
+		// } 
+		// System.out.println();
+		// System.out.println("Fields 2 Found in Method " + methodDeclaration.getName().toString() + Arrays.toString(assignmentVistor.getFieldsAssigned2().toArray()));
+		// System.out.println("Fields 3 Found in Method " + methodDeclaration.getName().toString() + Arrays.toString(assignmentVistor.getFieldsAssigned3().toArray()));
 	}
 
 	@Override
@@ -287,6 +312,14 @@ public class SM_Method extends SM_SourceItem implements Vertex {
 	
 	public List<SM_Type> getSMTypesInInstanceOf() {
 		return smTypesInInstanceOf;
+	}
+
+	public Map<String, Integer> getFieldsAssigned() {
+		return fieldsAssigned;
+	}
+
+	public Map<String, Integer> getThisFieldsAssigned() {
+		return thisFieldsAssigned;
 	}
 	
 }

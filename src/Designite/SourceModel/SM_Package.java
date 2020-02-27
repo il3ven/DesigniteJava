@@ -121,6 +121,7 @@ public class SM_Package extends SM_SourceItem {
 	public void extractTypeMetrics() {
 		for (SM_Type type : typeList) {
 			type.extractMethodMetrics();
+			type.extractFieldMetrics();
 			TypeMetrics metrics = new TypeMetrics(type);
 			metrics.extractMetrics();
 			metricsMapping.put(type, metrics);

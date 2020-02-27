@@ -12,6 +12,7 @@ public class MethodMetrics implements MetricExtractor {
 	private int numOfParameters;
 	private int cyclomaticComplexity;
 	private int numOfLines;
+	private int numberOfFieldsNeededByMethod;
 	
 	private SM_Method method;
 	
@@ -24,6 +25,7 @@ public class MethodMetrics implements MetricExtractor {
 		extractNumOfParametersMetrics();
 		extractCyclomaticComplexity();
 		extractNumberOfLines();
+		extractNumberOfFieldsNeededByMethod();
 	}
 	
 	private void extractNumOfParametersMetrics() {
@@ -53,6 +55,10 @@ public class MethodMetrics implements MetricExtractor {
 		}
 	}
 	
+	private void extractNumberOfFieldsNeededByMethod() {
+		numberOfFieldsNeededByMethod = method.getDirectFieldAccesses().size();
+	}
+	
 	private boolean methodHasBody() {
 		return method.getMethodDeclaration().getBody() != null;
 	}
@@ -67,6 +73,10 @@ public class MethodMetrics implements MetricExtractor {
 
 	public int getNumOfLines() {
 		return numOfLines;
+	}
+
+	public int getNumberOfFieldsNeededByMethod() {
+		return numberOfFieldsNeededByMethod;
 	}
 
 	public List<SM_Field> getDirectFieldAccesses() {
