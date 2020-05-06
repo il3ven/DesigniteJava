@@ -1,51 +1,53 @@
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\ImportVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\smells\implementationSmells\ImplementationSmellDetector.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\SM_Field.java
-C:\research\smellsML\DesigniteJava\src\Designite\utils\Constants.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\SM_EntitiesWithType.java
-C:\research\smellsML\DesigniteJava\src\Designite\utils\FileReader.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\SM_SourceItem.java
-C:\research\smellsML\DesigniteJava\src\Designite\smells\ThresholdsDTO.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\AccessStates.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\LocalVarVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\SM_Parameter.java
-C:\research\smellsML\DesigniteJava\src\Designite\smells\designSmells\HierarchySmellDetector.java
-C:\research\smellsML\DesigniteJava\src\Designite\smells\designSmells\DesignSmellFacade.java
-C:\research\smellsML\DesigniteJava\src\Designite\smells\designSmells\EncapsulationSmellDetector.java
-C:\research\smellsML\DesigniteJava\src\Designite\smells\models\DesignCodeSmell.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\SM_Type.java
-C:\research\smellsML\DesigniteJava\src\Designite\visitors\StaticFieldAccessVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\InputArgs.java
-C:\research\smellsML\DesigniteJava\src\Designite\utils\models\Graph.java
-C:\research\smellsML\DesigniteJava\src\Designite\visitors\ThrowVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\SM_Project.java
-C:\research\smellsML\DesigniteJava\src\Designite\utils\models\Edge.java
-C:\research\smellsML\DesigniteJava\src\Designite\utils\Logger.java
-C:\research\smellsML\DesigniteJava\src\Designite\smells\designSmells\AbstractionSmellDetector.java
-C:\research\smellsML\DesigniteJava\src\Designite\metrics\MetricExtractor.java
-C:\research\smellsML\DesigniteJava\src\Designite\metrics\TypeMetrics.java
-C:\research\smellsML\DesigniteJava\src\Designite\smells\designSmells\ModularizationSmellDetector.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\FieldVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\metrics\MethodMetrics.java
-C:\research\smellsML\DesigniteJava\src\Designite\smells\ThresholdsParser.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\SM_LocalVar.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\TypeVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\CSVSmellsExportable.java
-C:\research\smellsML\DesigniteJava\src\Designite\visitors\DirectAceessFieldVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\SM_Package.java
-C:\research\smellsML\DesigniteJava\src\Designite\visitors\InstanceOfVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\Resolver.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\VariableVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\SourceItemInfo.java
-C:\research\smellsML\DesigniteJava\src\Designite\smells\models\CodeSmell.java
-C:\research\smellsML\DesigniteJava\src\Designite\utils\models\Vertex.java
-C:\research\smellsML\DesigniteJava\src\Designite\visitors\MethodControlFlowVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\visitors\NumberLiteralVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\MethodInvVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\TypeInfo.java
-C:\research\smellsML\DesigniteJava\src\Designite\Designite.java
-C:\research\smellsML\DesigniteJava\src\Designite\smells\designSmells\DesignSmellDetector.java
-C:\research\smellsML\DesigniteJava\src\Designite\smells\models\ImplementationCodeSmell.java
-C:\research\smellsML\DesigniteJava\src\Designite\utils\CSVUtils.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\MethodVisitor.java
-C:\research\smellsML\DesigniteJava\src\Designite\SourceModel\SM_Method.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\smells\ThresholdsParser.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\SM_Project.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\metrics\FieldMetrics.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\SM_LocalVar.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\TypeVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\smells\designSmells\DesignSmellFacade.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\smells\models\CodeSmell.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\LocalVarVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\MethodVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\metrics\MethodMetrics.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\smells\models\DesignCodeSmell.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\smells\models\ImplementationCodeSmell.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\MethodInvVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\Designite.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\VariableVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\utils\Logger.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\visitors\ThrowVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\metrics\TypeMetrics.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\SM_SourceItem.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\metrics\MetricExtractor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\visitors\NumberLiteralVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\visitors\MethodControlFlowVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\smells\ThresholdsDTO.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\Resolver.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\smells\designSmells\EncapsulationSmellDetector.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\SM_Parameter.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\visitors\DirectAceessFieldVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\SM_Type.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\utils\CSVUtils.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\InputArgs.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\utils\models\Vertex.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\visitors\InstanceOfVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\utils\Constants.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\SourceItemInfo.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\smells\implementationSmells\ImplementationSmellDetector.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\smells\designSmells\AbstractionSmellDetector.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\SM_Field.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\utils\models\Edge.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\TypeInfo.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\utils\models\Graph.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\SM_Method.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\FieldVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\ImportVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\smells\designSmells\HierarchySmellDetector.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\visitors\StaticFieldAccessVisitor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\AccessStates.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\SM_Package.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\smells\designSmells\DesignSmellDetector.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\SM_EntitiesWithType.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\smells\designSmells\ModularizationSmellDetector.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\SourceModel\CSVSmellsExportable.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\visitors\AssignmentVistor.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\src\Designite\utils\FileReader.java

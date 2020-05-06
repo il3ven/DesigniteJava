@@ -1,19 +1,19 @@
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\smells\designSmells\ModularizationSmellDetectorTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_ParameterTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_PackageTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_TypeTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_LocalVarTests.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\metrics\TypeMetricsTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\smells\ThresholdsParserTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\InputArgsTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\smells\designSmells\EncapsulationSmellDetectorTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_MethodTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\DesigniteTests.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_FieldTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\utils\models\GraphTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_ProjectTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\smells\implementationSmells\ImplementationSmellDetectorTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\smells\designSmells\HierarchySmellDetectorTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\metrics\MethodMetricsTest.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_Method_CalledMethodsTests.java
-C:\research\smellsML\DesigniteJava\tests\DesigniteTests\DesigniteTests\smells\designSmells\AbstractionSmellDetectorTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\smells\designSmells\ModularizationSmellDetectorTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_Method_CalledMethodsTests.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\metrics\TypeMetricsTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\smells\designSmells\EncapsulationSmellDetectorTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\smells\designSmells\AbstractionSmellDetectorTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_PackageTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_FieldTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_LocalVarTests.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\DesigniteTests.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\smells\implementationSmells\ImplementationSmellDetectorTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_ProjectTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\metrics\MethodMetricsTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_MethodTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\utils\models\GraphTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\InputArgsTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_TypeTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\smells\designSmells\HierarchySmellDetectorTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\SM_ParameterTest.java
+D:\Trash\minor 2\DesigniteJava\DesigniteJava\tests\DesigniteTests\DesigniteTests\smells\ThresholdsParserTest.java
